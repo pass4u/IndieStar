@@ -7,3 +7,6 @@
 ##### Android 설정
 ###### 1. IndieStarForAOS Class를 Component로 셋팅합니다.
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
+###### 2. Entry Class(앱시작 클래스)에 아래와 같이 코딩 합니다.
+![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_2.png)
+> IndieStarForAOS.instance.PopupOnIndieStar();
