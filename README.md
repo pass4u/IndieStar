@@ -6,4 +6,4 @@
 #### API 설치 방법
 ##### Android 설정
 ###### 1. IndieStarForAOS Class를 Component로 셋팅합니다.
-####### ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
+![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
