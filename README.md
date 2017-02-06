@@ -3,10 +3,9 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
-### API 설치 방법
 
 
-##### Android 설정
+#### Android 설정
 ###### - IndieStarForAOS Class를 Component로 셋팅합니다.
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
 
@@ -23,7 +22,7 @@
 > IndieStarForAOS.instance.CoverFlowOnIndieStar();
 
 
-#### iOS 설정
+### iOS 설정
 ###### 1. PopupOnIndieStar 설정(Android설정과 같음)
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_5.png)
 > IndieStarForAOS.instance.PopupOnIndieStar();
