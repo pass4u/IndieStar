@@ -5,7 +5,7 @@
 #### Unity3D용 IndieStar API를 소개합니다.
 
 
-#### Android 설정
+### Android 설정
 ###### - IndieStarForAOS Class를 Component로 셋팅합니다.
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
 
