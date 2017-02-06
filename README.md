@@ -3,6 +3,7 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
+#### Unity Plugin : [Download](https://github.com/pass4u/IndieStar/blob/master/unity/IndieStarForUnity_v1.0.unitypackage)
 
 
 ### Android 설정
