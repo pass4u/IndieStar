@@ -27,6 +27,9 @@
 <a id="chapter-2"></a>
 ### Unity iOS 설정
 #### - IndieStarForIOS Class를 Component로 셋팅합니다.
+![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
+
+
 ##### 1. PopupOnIndieStar 설정(Android설정과 같음)
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_5.png)
 
