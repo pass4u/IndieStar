@@ -8,13 +8,13 @@
 
 
 #### 목차
-> - 공통설정
->  - PopupCloseHandler 등록
-> - iOS 설정
-> - Android 설정
+> - [공통설정](#chapter-1)
+>  - [PopupCloseHandler 등록](#chapter-1-1)
+> - [iOS 설정](#chapter-2)
+> - [Android 설정](#chapter-3)
 
 ### 공통설정 <a id="chapter-1"></a>
-#### PopupCloseHandler 등록
+#### PopupCloseHandler 등록 <a id="chapter-1-1"></a>
 ##### IndieStar의 모든 팝업이 닫힐때 호출될 콜백 메서드를 정의합니다.
 ###### 아래는 'Main Camera'의 'PopupCloseHandler'메서드를 콜백 핸들러로 등록한 예 입니다.
 
