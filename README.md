@@ -10,8 +10,8 @@
 #### 목차
 > - [공통설정](#chapter-1)
 >  - [PopupCloseHandler 등록](#chapter-1-1)
-> - [iOS 설정](#chapter-2)
-> - [Android 설정](#chapter-3)
+> - [Unity iOS 설정](#chapter-2)
+> - [Unity Android 설정](#chapter-3)
 
 
 <a id="chapter-1"></a>
