@@ -8,8 +8,6 @@
 
 
 #### 목차
-> - [공통설정](#chapter-1)
->  - [PopupCloseHandler 등록](#chapter-1-1)
 > - [Unity iOS 설정](#chapter-2)
 >  - [StartIndieStar 설정](#chapter-2-1)
 >  - [PopupOnIndieStar 설정](#chapter-2-1)
@@ -23,15 +21,6 @@
 >  - [IndieStarView 설정](#chapter-3-4)
 >  - [InstallReferrer 설정](#chapter-3-5)
 
-
-<a id="chapter-1"></a>
-### 공통설정
-<a id="chapter-1-1"></a>
-#### PopupCloseHandler 등록
-##### IndieStar의 모든 팝업이 닫힐때 호출될 콜백 메서드를 정의합니다.
-###### 아래는 'Main Camera'의 'PopupCloseHandler'메서드를 콜백 핸들러로 등록한 예 입니다.
-
-    IndieStarForIOS.instance.RegisterPopupCloseHandler("Main Camera","PopupCloseHandler");
 
 
 <a id="chapter-2"></a>
