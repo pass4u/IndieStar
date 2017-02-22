@@ -29,7 +29,7 @@
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
 
 <a id="chapter-2-1"></a>
-##### 1. StartIndieStar 설정(Android설정과 같음)
+##### 1. StartIndieStar 설정
 ###### - IndieStar를 초기화 하는 과정으로, apple appid, IndieStar 등록 id, package name을 입력합니다. Unity의 Start 함수에 정의하는 것이 좋습니다. 최초 1회만 호출되도록 코드 추가 합니다.
 ###### parameter
 > apple app id : "apple 앱 아이디" : string
@@ -38,7 +38,7 @@
 
 > package name : "패키지 네임" : string
 
-    IndieStarForIOS.instance.StartIndieStar ("1099756918", "(5) mAMhxd7sr6gqkFJej", "com.example.app");
+    IndieStarForIOS.instance.StartIndieStar ("1099756918", "mAMhxd7sr6gqkFJej", "com.example.app");
 
 <a id="chapter-2-2"></a>
 ##### 2. PopupOnIndieStar 설정(Android설정과 같음)
@@ -71,16 +71,15 @@
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
 
 <a id="chapter-3-1"></a>
-##### 1. StartIndieStar 설정(iOS설정과 같음)
-###### - IndieStar를 초기화 하는 과정으로, apple appid, IndieStar 등록 id, package name을 입력합니다. Unity의 Start 함수에 정의하는 것이 좋습니다. 최초 1회만 호출되도록 코드 추가 합니다.
+##### 1. StartIndieStar 설정
+###### - IndieStar를 초기화 하는 과정으로 IndieStar 등록 id, package name을 입력합니다. Unity의 Start 함수에 정의하는 것이 좋습니다. 최초 1회만 호출되도록 코드 추가 합니다.
 ###### parameter
-> apple app id : "apple 앱 아이디"
 
 > indiestar id : "indiestar 등록시 발급받은 아이디"
 
 > package name : "패키지 네임"
 
-    IndieStarForIOS.instance.StartIndieStar ("1099756918", "(5) mAMhxd7sr6gqkFJej", "com.example.app");
+    IndieStarForAOS.instance.StartIndieStar ("mAMhxd7sr6gqkFJej", "com.example.app");
 
 <a id="chapter-3-2"></a>    
 ##### 2. PopupOnIndieStar 설정(iOS설정과 같음)
