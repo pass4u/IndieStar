@@ -13,16 +13,19 @@
 > - [iOS 설정](#chapter-2)
 > - [Android 설정](#chapter-3)
 
-### 공통설정 <a id="chapter-1"></a>
-#### PopupCloseHandler 등록 <a id="chapter-1-1"></a>
+
+<a id="chapter-1"></a>
+### 공통설정
+<a id="chapter-1-1"></a>
+#### PopupCloseHandler 등록
 ##### IndieStar의 모든 팝업이 닫힐때 호출될 콜백 메서드를 정의합니다.
 ###### 아래는 'Main Camera'의 'PopupCloseHandler'메서드를 콜백 핸들러로 등록한 예 입니다.
 
     IndieStarForIOS.instance.RegisterPopupCloseHandler("Main Camera","PopupCloseHandler");
 
 
-
-### iOS 설정 <a id="chapter-2"></a>
+<a id="chapter-2"></a>
+### Unity iOS 설정
 #### - IndieStarForIOS Class를 Component로 셋팅합니다.
 ##### 1. PopupOnIndieStar 설정(Android설정과 같음)
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_5.png)
@@ -35,8 +38,8 @@
     IndieStarForAOS.instance.MoreGameSimpleOnIndieStar();
 
 
-
-### Android 설정 <a id="chapter-3"></a>
+<a id="chapter-3"></a>
+### Unity Android 설정
 #### - IndieStarForAOS Class를 Component로 셋팅합니다.
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
 
