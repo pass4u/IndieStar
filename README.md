@@ -21,7 +21,22 @@
     IndieStarForIOS.instance.RegisterPopupCloseHandler("Main Camera","PopupCloseHandler");
 
 
-### Android 설정 <a id="chapter-2"></a>
+
+### iOS 설정 <a id="chapter-2"></a>
+#### - IndieStarForIOS Class를 Component로 셋팅합니다.
+##### 1. PopupOnIndieStar 설정(Android설정과 같음)
+![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_5.png)
+
+    IndieStarForAOS.instance.PopupOnIndieStar();
+
+##### 2. MoreGameSimpleOnIndieStar 설정(Android설정과 같음)
+![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_6.png)
+
+    IndieStarForAOS.instance.MoreGameSimpleOnIndieStar();
+
+
+
+### Android 설정 <a id="chapter-3"></a>
 #### - IndieStarForAOS Class를 Component로 셋팅합니다.
 ![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_1.png)
 
@@ -48,20 +63,3 @@
         <action android:name="com.android.vending.INSTALL_REFERRER" />
       </intent-filter>
     </receiver>
-
-
-
-
-
-
-### iOS 설정 <a id="chapter-3"></a>
-#### - IndieStarForIOS Class를 Component로 셋팅합니다.
-##### 1. PopupOnIndieStar 설정(Android설정과 같음)
-![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_5.png)
-
-    IndieStarForAOS.instance.PopupOnIndieStar();
-
-##### 2. MoreGameSimpleOnIndieStar 설정(Android설정과 같음)
-![Alt component 설정](https://github.com/pass4u/IndieStar/blob/master/res/api_6.png)
-
-    IndieStarForAOS.instance.MoreGameSimpleOnIndieStar();
