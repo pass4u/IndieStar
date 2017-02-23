@@ -20,6 +20,7 @@
 >  - [PopupCloseHandler 등록](#chapter-3-4)
 >  - [IndieStarView 설정](#chapter-3-4)
 >  - [InstallReferrer 설정](#chapter-3-5)
+> - [Release Note](#chapter-4)
 
 
 
@@ -118,3 +119,10 @@
         <action android:name="com.android.vending.INSTALL_REFERRER" />
       </intent-filter>
     </receiver>
+
+
+
+<a id="chapter-4"></a>
+#### Release note
+##### V2.1 - 2017.02.23
+###### - Android IndieStar 팝업 실행시 Crash 수정(AOS 5.0이상에서 발생)
