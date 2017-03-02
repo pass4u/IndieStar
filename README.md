@@ -126,3 +126,6 @@
 #### Release note
 ##### V2.1 - 2017.02.23
 ###### - Android IndieStar 팝업 실행시 Crash 수정(AOS 5.0이상에서 발생)
+
+##### V2.2 - 2017.03.02
+###### - Android IndieStar 팝업실행 실행중 Back버튼시 close handler 호출
