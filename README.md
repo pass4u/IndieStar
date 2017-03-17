@@ -3,9 +3,7 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
-#### Unity Plugin : [Download](https://github.com/pass4u/IndieStar/blob/master/unity/IndieStarForUnity_v2.2.unitypackage)
-#### Unity Sample Project : [Download](https://github.com/pass4u/IndieStar/blob/master/sample_unity_project/sample_unity_project.unitypackage)
-
+#### Unity Plugin : [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.3.unitypackage)
 
 #### 목차
 > - [Unity iOS 설정](#chapter-2)
