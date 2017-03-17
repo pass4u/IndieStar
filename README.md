@@ -4,6 +4,12 @@
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
 #### Unity Plugin : [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.3.unitypackage)
+#### Android Pulgin :[Download]
+https://github.com/pass4u/IndieStar/tree/master/unity/aos
+
+### iOS Plugin :[Download]
+https://github.com/pass4u/IndieStar/tree/master/unity/ios
+
 
 #### 목차
 > - [Unity iOS 설정](#chapter-2)
@@ -18,6 +24,8 @@
 >  - [PopupCloseHandler 등록](#chapter-3-4)
 >  - [IndieStarView 설정](#chapter-3-4)
 >  - [InstallReferrer 설정](#chapter-3-5)
+> - [Android 설명]  (#android)
+> - [iOS 설명] (#ios)
 > - [Release Note](#chapter-4)
 
 
@@ -119,6 +127,9 @@
     </receiver>
 
 
+<a id="android"></a>
+
+<a id="ios"></a>
 
 <a id="chapter-4"></a>
 #### Release note
