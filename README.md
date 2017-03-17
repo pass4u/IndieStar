@@ -132,20 +132,24 @@
 
 
 ##### Init
-###### void Start(String app_id, String package_name)
-app_id : Superstars games 에서 발급한 id
-package_name : 패키지명
+    void Start(String app_id, String package_name)
+> app_id : Superstars games 에서 발급한 id
+
+> package_name : 패키지명
+
 
 ##### 창 닫힘 이벤트 콜백 (Unity에서 사용)
-###### void RegisterCloseHandler(String class_name, String method_name)
-class_name : 이벤트를 수신할 game object 
-method_name : 이벤트를 수신할 method
+    void RegisterCloseHandler(String class_name, String method_name)
+> class_name : 이벤트를 수신할 game object
+
+> method_name : 이벤트를 수신할 method
+
 
 ##### Interstitial (전면배너)
-###### void Popup(Context mContext)
+    void Popup(Context mContext)
 
 ##### More Game 팝업 (채널링내 다른 게임 목록제공)
-###### void MoreGameSimple(Context mContext)
+    void MoreGameSimple(Context mContext)
 
 
 <a id="ios"></a>
@@ -153,21 +157,28 @@ method_name : 이벤트를 수신할 method
 #### iOS Plugin :[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 ##### Init
-###### (void)IndieStarStart:(NSString*)_app_id indiestar_id:(NSString*)_indiestar_id package_name:(NSString*)_package_name
-_app_id : itunes connect apple id
-_indiestar_id : Superstar games에서 발급받은 id
-_package_name : 게임의 안드로이드 패키지명 
+    (void)IndieStarStart:(NSString*)_app_id indiestar_id:(NSString*)_indiestar_id package_name:(NSString*)_package_name
+> _app_id : itunes connect apple id
 
+> _indiestar_id : Superstar games에서 발급받은 id
+
+> _package_name : 게임의 안드로이드 패키지명 
+
+  
+  
+  
 ##### 창 닫힘 이벤트 콜백 (Unity에서 사용)
-###### (void)RegisterCloseHandlerFunc:(const char*)_class_name method:(const char*)_method
-_class_name : 이벤트를 수신할 game object 
-_method : 이벤트를 수신할 method
+    (void)RegisterCloseHandlerFunc:(const char*)_class_name method:(const char*)_method
+> _class_name : 이벤트를 수신할 game object 
+
+> _method : 이벤트를 수신할 method
+
 
 ##### Interstitial (전면배너)
-###### -(void)IndieStarAd
+    -(void)IndieStarAd
 
 ##### More Game 팝업 (채널링내 다른 게임 목록제공)
-###### -(void)IndieStarMoreGameSimple
+    -(void)IndieStarMoreGameSimple
 
 <a id="chapter-4"></a>
 #### Release note
