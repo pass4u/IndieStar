@@ -4,11 +4,9 @@
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
 #### Unity Plugin : [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.3.unitypackage)
-#### Android Pulgin :[Download]
-https://github.com/pass4u/IndieStar/tree/master/unity/aos
+#### Android Pulgin :[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
 
-### iOS Plugin :[Download]
-https://github.com/pass4u/IndieStar/tree/master/unity/ios
+### iOS Plugin :[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 
 #### 목차
@@ -24,8 +22,8 @@ https://github.com/pass4u/IndieStar/tree/master/unity/ios
 >  - [PopupCloseHandler 등록](#chapter-3-4)
 >  - [IndieStarView 설정](#chapter-3-4)
 >  - [InstallReferrer 설정](#chapter-3-5)
-> - [Android 설명]  (#android)
-> - [iOS 설명] (#ios)
+> - [Android 설명](#android)
+> - [iOS 설명](#ios)
 > - [Release Note](#chapter-4)
 
 
@@ -129,7 +127,47 @@ https://github.com/pass4u/IndieStar/tree/master/unity/ios
 
 <a id="android"></a>
 
+#### Jar 
+#### Android Pulgin :[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
+
+
+##### Init
+###### void Start(String app_id, String package_name)
+app_id : Superstars games 에서 발급한 id
+package_name : 패키지명
+
+##### 창 닫힘 이벤트 콜백 (Unity에서 사용)
+###### void RegisterCloseHandler(String class_name, String method_name)
+class_name : 이벤트를 수신할 game object 
+method_name : 이벤트를 수신할 method
+
+##### Interstitial (전면배너)
+###### void Popup(Context mContext)
+
+##### More Game 팝업 (채널링내 다른 게임 목록제공)
+###### void MoreGameSimple(Context mContext)
+
+
 <a id="ios"></a>
+#### iOS 라이브러리 (.a) 
+#### iOS Plugin :[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
+
+##### Init
+###### (void)IndieStarStart:(NSString*)_app_id indiestar_id:(NSString*)_indiestar_id package_name:(NSString*)_package_name
+_app_id : itunes connect apple id
+_indiestar_id : Superstar games에서 발급받은 id
+_package_name : 게임의 안드로이드 패키지명 
+
+##### 창 닫힘 이벤트 콜백 (Unity에서 사용)
+###### (void)RegisterCloseHandlerFunc:(const char*)_class_name method:(const char*)_method
+_class_name : 이벤트를 수신할 game object 
+_method : 이벤트를 수신할 method
+
+##### Interstitial (전면배너)
+###### -(void)IndieStarAd
+
+##### More Game 팝업 (채널링내 다른 게임 목록제공)
+###### -(void)IndieStarMoreGameSimple
 
 <a id="chapter-4"></a>
 #### Release note
