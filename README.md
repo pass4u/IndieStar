@@ -5,7 +5,7 @@
 #### Unity3D용 IndieStar API를 소개합니다.
 #### Unity Plugin (V 2.4): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.4.unitypackage)
 #### Android Pulgin (V 2.4):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
-#### iOS Plugin (V 2.4):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
+#### iOS Plugin (V 2.41):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 
 #### 목차
@@ -193,3 +193,5 @@
 ##### V2.4 - 2017.03,30
 ###### - 오늘만보기 기능추가됨
 
+##### V2.41 (iOS) - 2017.03,30
+###### - Xcode Build시 architecture error fix
