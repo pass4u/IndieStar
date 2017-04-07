@@ -3,7 +3,7 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
-#### Unity Plugin (V 2.41): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/IndieStar_Unity_2.41.unitypackage)
+#### Unity Plugin (V 2.42): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unitypackage_2.42.unitypackage)
 #### Android Pulgin (V 2.4):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
 #### iOS Plugin (V 2.41):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
@@ -195,3 +195,6 @@
 
 ##### V2.41 (Unity/iOS) - 2017.03,30
 ###### - Xcode Build시 architecture error fix
+
+##### V2.42 (Unity) -2017.4.8
+###### iOS빌드 지원
