@@ -4,7 +4,7 @@
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
 #### Unity Plugin (V 2.45): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.45.unitypackage)
-#### Android Pulgin (V 2.45):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
+#### Android Pulgin (V 2.46):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
 #### iOS Plugin (V 2.45):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 
@@ -202,3 +202,6 @@
 ##### v2.45
 ###### - 활성배너가 없을때 배너창이 열리지않도록 자동처리됨.
 ###### - 자기게임은 배너에서 제외됨.
+
+##### v2.46 
+###### - 오늘만보기체크 이후 빈액티비티가 잠깐 뜰수도 있는 이슈 fix
