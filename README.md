@@ -3,9 +3,9 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
-#### Unity Plugin (V 2.46): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.46.unitypackage)
-#### Android Pulgin (V 2.46):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
-#### iOS Plugin (V 2.45):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
+#### Unity Plugin (V 2.47): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.47.unitypackage)
+#### Android Pulgin (V 2.47):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
+#### iOS Plugin (V 2.47):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 
 #### 목차
@@ -205,3 +205,6 @@
 
 ##### v2.46 
 ###### - 오늘만보기체크 이후 빈액티비티가 잠깐 뜰수도 있는 이슈 fix
+
+##### v2.47 
+###### - 세로배너지원
