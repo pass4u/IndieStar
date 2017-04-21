@@ -161,7 +161,7 @@
 
 > _indiestar_id : Superstar games에서 발급받은 id
 
-> _package_name : 게임의 안드로이드 패키지명 
+> _package_name : 게임의 ios 번들 (SKU)명 (ex: com.slowpuppy.XXX.ios)
 
   
   
