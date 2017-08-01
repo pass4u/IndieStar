@@ -3,9 +3,9 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
-#### Unity Plugin (V 2.49): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.49.unitypackage)
-#### Android Pulgin (V 2.49):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
-#### iOS Plugin (V 2.49):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
+#### Unity Plugin (V 2.52): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.49.unitypackage)
+#### Android Pulgin (V 2.52):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
+#### iOS Plugin (V 2.52):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 
 #### 목차
@@ -214,4 +214,7 @@
 
 ##### v2.48 
 ###### - android insatll referrer 체크 이슈  fix
+
+##### v2.52 
+###### - android,ios banner scale fix
 
