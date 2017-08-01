@@ -24,6 +24,9 @@
     NSString *package_name;
     NSString *UID;
     
+    NSString* m_strServerUrl;
+    NSString* m_strAdminServerUrl;
+    
     //close handler
     NSString* class_name;
     NSString* method_name;
