@@ -111,7 +111,7 @@
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
 
 ###### return value
-> string : "today,total"
+> string : "today,total" (ex "1,1")
 
     IndieStarForIOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx");
 
@@ -224,7 +224,7 @@
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
 
 ###### return value
-> string : "today,total"
+> string : "today,total" (ex "1,1")
 
     IndieStarForAOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx"); 
       
@@ -341,15 +341,23 @@
 
 > ios_apple_id : itunes connect apple id
 
+> return string : "xx.xx.xx/share/click/AOS?key=xxxxx" or "xx.xx.xx/share/click/IOS?key=xxxxx"
+
 ##### Consume (포인트 차감)
     -(int) Consume:(NSString*)strKey:(int)iNum
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
 
 > iNum : 차감할 포인트
 
+> return value -1 : 구매실패 
+
+> return value 양의정수 or 0 : 구매 후 남은 Total 값
+
 ##### GetBalance (Today, Total 포인트 )
     -(char*) GetBalance : (NSString*)strKey
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
+
+> return string : "today,total" (ex "1,1")
 
 <a id="chapter-4"></a>
 #### Release note
