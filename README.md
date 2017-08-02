@@ -3,9 +3,9 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
-#### Unity Plugin (V 2.52): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.49.unitypackage)
-#### Android Pulgin (V 2.52):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
-#### iOS Plugin (V 2.52):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
+#### Unity Plugin (V 2.53): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unity_sample_V2.49.unitypackage)
+#### Android Pulgin (V 2.53):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
+#### iOS Plugin (V 2.53):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 
 #### 목차
@@ -67,8 +67,49 @@
 > Method name : string
 
         IndieStarForIOS.instance.RegisterPopupCloseHandler("Main Camera","PopupCloseHandler");
+        
+<a id="chapter-2-5"></a>
+##### 5. GameNoticeOnIndieStar 설정(Android설정과 같음)
+###### - IndieStar 특정 게임, 국가에 공지사항을 띄우는 메서드 입니다.
+        IndieStarForIOS.instance.GameNoticeOnIndieStar();
+        
+<a id="chapter-2-6"></a>
+##### 6. GameShareOnIndieStar 설정
+###### - IOS에서 Text를 공유하는 API호출하는 메서드 입니다.
+###### parameter
+> strUrl : store로 연결되는 url GetShareUrl의 return value
+       
+       IndieStarForIOS.instance.GameShareOnIndieStar("XX.XX.XX/XX/XX/key?=XXX");
 
+<a id="chapter-2-7"></a>
+##### 7. GetShareUrlOnIndieStar 설정
+###### - 공유할 Url을 가져오는 메서드 입니다.
+###### parameter
+> aos_pack_name : 게임의 aos 번들 (SKU)명 (ex: com.slowpuppy.XXX)
 
+> ios_apple_id : itunes connect apple id
+       
+       IndieStarForIOS.instance.GetShareUrlOnIndieStar("com.example.app", "1099756918");
+       
+<a id="chapter-2-8"></a>
+##### 8. GetBalanceOnIndieStar 설정
+###### - 게임내 Share Point를 받아오는 메서드 입니다.
+###### parameter
+> strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
+       
+       IndieStarForIOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx");       
+       
+<a id="chapter-2-9"></a>
+##### 9. SharePointConsumeOnIndieStar 설정
+###### - 게임내 Share Point를 차감하는 메서드 입니다.
+###### parameter
+> strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
+ 
+> iNum : 차감할 포인트
+
+       IndieStarForIOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);      
+       
+       
 <a id="chapter-3"></a>
 ### Unity Android 설정
 #### - IndieStarForAOS Class를 Component로 셋팅합니다.
@@ -124,6 +165,51 @@
     </receiver>
 
 
+<a id="chapter-3-7"></a>
+##### 7. GameNoticeOnIndieStar 설정(IOS설정과 같음)
+###### - IndieStar 특정 게임, 국가에 공지사항을 띄우는 메서드 입니다.
+        IndieStarForAOS.instance.GameNoticeOnIndieStar();
+        
+<a id="chapter-3-8"></a>
+##### 8. ShareOnIndieStar 설정
+###### - Android에서 Text를 공유하는 API호출하는 메서드 입니다.
+###### parameter
+> strUrl : store로 연결되는 url GetShareUrl의 return value
+       
+       IndieStarForAOS.instance.ShareOnIndieStar("XX.XX.XX/XX/XX/key?=XXX");
+
+<a id="chapter-3-9"></a>
+##### 9. GetShareUrlOnIndieStar 설정
+###### - 공유할 Url을 가져오는 메서드 입니다.
+###### parameter
+> aos_pack_name : 게임의 aos 번들 (SKU)명 (ex: com.slowpuppy.XXX)
+
+> ios_apple_id : itunes connect apple id
+       
+       IndieStarForAOS.instance.GetShareUrlOnIndieStar("com.example.app", "1099756918");
+       
+<a id="chapter-3-10"></a>
+##### 10. GetBalanceOnIndieStar 설정
+###### - 게임내 Share Point를 받아오는 메서드 입니다.
+###### parameter
+> strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
+       
+       IndieStarForAOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx");       
+       
+<a id="chapter-3-11"></a>
+##### 11. SharePointConsumeOnIndieStar 설정
+###### - 게임내 Share Point를 차감하는 메서드 입니다.
+###### parameter
+> strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
+ 
+> iNum : 차감할 포인트
+
+       IndieStarForAOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);  
+
+
+
+
+
 <a id="android"></a>
 
 #### Jar 
@@ -149,6 +235,29 @@
 
 ##### More Game 팝업 (채널링내 다른 게임 목록제공)
     void MoreGameSimple(Context mContext)
+    
+##### Game Notice 팝업 (특정 게임에 국가별로 공지사항 등록)
+    void GameNoticePopup(Context mContext)
+    
+##### 공유하기 (공유할 목록을 띄움)
+    void GameShare(Context mContext, String strUrl)
+> strUrl : store로 연결되는 url GetShareUrl의 return value
+
+##### Share Url Get (공유할 url 얻어옴)
+    String GetShareUrl(Context mContext, String aos_pack_name, String ios_apple_id)
+> aos_pack_name : 게임의 aos 번들 (SKU)명 (ex: com.slowpuppy.XXX)
+
+> ios_apple_id : itunes connect apple id
+
+##### Consume (포인트 차감)
+    int Consume(String strKey, int iNum)
+> strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
+
+> iNum : 차감할 포인트
+
+##### GetBalance (Today, Total 포인트 )
+    String GetBalance(String strKey)
+> strKey : 암호화된 key GetShareUrl의 return value 중 key의 값    
 
 
 <a id="ios"></a>
@@ -178,6 +287,29 @@
 
 ##### More Game 팝업 (채널링내 다른 게임 목록제공)
     -(void)IndieStarMoreGameSimple
+    
+##### Game Notice 팝업 (특정 게임에 국가별로 공지사항 등록)
+    -(void)IndieStarGameNotice
+    
+##### 공유하기 (공유할 목록을 띄움)
+    -(void)GameShare:(NSString*)strUrl
+> strUrl : store로 연결되는 url GetShareUrl의 return value
+
+##### Share Url Get (공유할 url 얻어옴)
+    -(char*) GetShareUrl : (NSString*)aos_pack_name:(NSString*)ios_apple_id
+> aos_pack_name : 게임의 aos 번들 (SKU)명 (ex: com.slowpuppy.XXX)
+
+> ios_apple_id : itunes connect apple id
+
+##### Consume (포인트 차감)
+    -(int) Consume:(NSString*)strKey:(int)iNum
+> strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
+
+> iNum : 차감할 포인트
+
+##### GetBalance (Today, Total 포인트 )
+    -(char*) GetBalance : (NSString*)strKey
+> strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
 
 <a id="chapter-4"></a>
 #### Release note
@@ -218,3 +350,6 @@
 ##### v2.52 
 ###### - android,ios banner scale fix
 
+##### v2.53 
+###### - 게임 공지사항 배너 추가
+###### - 공유하기 기능 
