@@ -289,16 +289,23 @@
 
 > ios_apple_id : itunes connect apple id
 
+> return string : "xx.xx.xx/share/click/AOS?key=xxxxx"
+
 ##### Consume (포인트 차감)
     int Consume(String strKey, int iNum)
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
 
 > iNum : 차감할 포인트
 
+> return value -1 : 구매실패 
+
+> return value 양의정수 or 0 : 구매 후 남은 Total 값
+
 ##### GetBalance (Today, Total 포인트 )
     String GetBalance(String strKey)
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값    
 
+> return string : "today,total" (ex "1,1")
 
 <a id="ios"></a>
 #### iOS 라이브러리 (.a) 
@@ -341,7 +348,7 @@
 
 > ios_apple_id : itunes connect apple id
 
-> return string : "xx.xx.xx/share/click/AOS?key=xxxxx" or "xx.xx.xx/share/click/IOS?key=xxxxx"
+> return string : "xx.xx.xx/share/click/IOS?key=xxxxx"
 
 ##### Consume (포인트 차감)
     -(int) Consume:(NSString*)strKey:(int)iNum
