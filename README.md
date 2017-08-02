@@ -71,7 +71,7 @@
      
 <a id="chapter-2-5"></a>
 ##### 5. GameNoticeOnIndieStar 설정(Android설정과 같음)
-###### - IndieStar 특정 게임, 국가에 공지사항을 띄우는 메서드 입니다.
+###### - IndieStar 특정 게임, 국가에 공지사항을 띄우는 메서드 입니다. Admin Server NoticeBanner에 등록되어있는 게임 패키지명 과 언어와 sdk를 사용하는 게임 패키지명 과 기기에 설정되어있는 언어가 맞아야지만 호출이 됩니다.
 
     IndieStarForIOS.instance.GameNoticeOnIndieStar();  
         
@@ -190,7 +190,7 @@
 
 <a id="chapter-3-7"></a>
 ##### 7. GameNoticeOnIndieStar 설정(IOS설정과 같음)
-###### - IndieStar 특정 게임, 국가에 공지사항을 띄우는 메서드 입니다.
+###### - IndieStar 특정 게임, 국가에 공지사항을 띄우는 메서드 입니다. Admin Server NoticeBanner에 등록되어있는 게임 패키지명 과 언어와 sdk를 사용하는 게임 패키지명 과 기기에 설정되어있는 언어가 맞아야지만 호출이 됩니다.
 
     IndieStarForAOS.instance.GameNoticeOnIndieStar();
         
