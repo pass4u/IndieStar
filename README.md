@@ -95,7 +95,9 @@
 > aos_pack_name : 게임의 aos 번들 (SKU)명 (ex: com.slowpuppy.XXX)
 
 > ios_apple_id : itunes connect apple id
-       
+
+###### return value
+> string : "xxx.xxx.xxx/share/click/IOS?key=xxxxxxx"
 
     IndieStarForIOS.instance.GetShareUrlOnIndieStar("com.example.app", "1099756918");
 
@@ -107,7 +109,9 @@
 ###### - 게임내 Share Point를 받아오는 메서드 입니다.
 ###### parameter
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
-       
+
+###### return value
+> string : "today,total"
 
     IndieStarForIOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx");
 
@@ -119,6 +123,11 @@
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
  
 > iNum : 차감할 포인트
+
+###### return value
+> return value -1 : 구매실패 
+
+> return value 양의정수 or 0 : 구매 후 남은 Total 값
 
     IndieStarForIOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);
 
@@ -202,6 +211,9 @@
 
 > ios_apple_id : itunes connect apple id
 
+###### return value
+> string : "xxx.xxx.xxx/share/click/AOS?key=xxxxxxx"
+
     IndieStarForAOS.instance.GetShareUrlOnIndieStar("com.example.app", "1099756918");
 
        
@@ -210,6 +222,9 @@
 ###### - 게임내 Share Point를 받아오는 메서드 입니다.
 ###### parameter
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
+
+###### return value
+> string : "today,total"
 
     IndieStarForAOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx"); 
       
@@ -221,6 +236,12 @@
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
  
 > iNum : 차감할 포인트
+
+###### return value
+> return value -1 : 구매실패 
+
+> return value 양의정수 or 0 : 구매 후 남은 Total 값
+
 
     IndieStarForAOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);  
 
