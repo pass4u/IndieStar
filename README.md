@@ -3,9 +3,9 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
-#### Unity Plugin (V 2.53): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unitypackage_2.53.unitypackage)
-#### Android Pulgin (V 2.53):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
-#### iOS Plugin (V 2.53):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
+#### Unity Plugin (V 2.54): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unitypackage_2.54.unitypackage)
+#### Android Pulgin (V 2.54):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
+#### iOS Plugin (V 2.54):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 
 #### 목차
@@ -79,6 +79,7 @@
 <a id="chapter-2-6"></a>
 ##### 6. GameShareOnIndieStar 설정
 ###### - IOS에서 Text를 공유하는 API호출하는 메서드 입니다.
+###### - 공유한 Url을 모바일에서 클릭하면 항상 sdk를 사용한 게임에 스토어로 이동하고 이 메서드를 실행한 사람의 today,total,current_point값이 1증가합니다. 하루에 얻을수있는 포인트는 100point 입니다. today 포인트는 매일 00시00분00초 0으로 초기화 됩니다. 중복 클릭이 불가능 합니다(ex. A가 공유 B가 A의Url 10번 클릭하면 스토어로 이동은 되지만 A의 today,total,current_point는 1만증가)
 ###### parameter
 > strUrl : store로 연결되는 url GetShareUrl의 return value
        
@@ -111,7 +112,7 @@
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
 
 ###### return value
-> string : "today,total" (ex "1,1")
+> string : "today,current_point,total" (ex "1,1,1")
 
     IndieStarForIOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx");
 
@@ -119,17 +120,18 @@
 <a id="chapter-2-9"></a>
 ##### 9. SharePointConsumeOnIndieStar 설정
 ###### - 게임내 Share Point를 차감하는 메서드 입니다.
+###### - 가지고 있는 current_point값 만큼만 차감할 수 있습니다. 차감은 current_point만 감소합니다(ex.A의today=100, current_point=100, total=100 일때 100만큼 차감 => A의 남은 포인트 today=100, current_point=0, total=100)
 ###### parameter
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
  
 > iNum : 차감할 포인트
 
 ###### return value
-> return value -1 : 구매실패 
+> return value -1 : 구매실패 (ex. current_point = 100일때 101이상 차감하려고 할때)
 
-> return value 양의정수 or 0 : 구매 후 남은 Total 값
+> return value 양의정수 or 0 : 구매 후 남은 current_point 값
 
-    IndieStarForIOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);
+    IndieStarForIOS.instance.SharePointConsumeOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);
 
        
        
@@ -197,6 +199,7 @@
 <a id="chapter-3-8"></a>
 ##### 8. ShareOnIndieStar 설정
 ###### - Android에서 Text를 공유하는 API호출하는 메서드 입니다.
+###### - 공유한 Url을 모바일에서 클릭하면 항상 sdk를 사용한 게임에 스토어로 이동하고 이 메서드를 실행한 사람의 today,total,current_point값이 1증가합니다. 하루에 얻을수있는 포인트는 100point 입니다. today 포인트는 매일 00시00분00초 0으로 초기화 됩니다. 중복 클릭이 불가능 합니다(ex. A가 공유 B가 A의Url 10번 클릭하면 스토어로 이동은 되지만 A의 today,total,current_point는 1만증가)
 ###### parameter
 > strUrl : store로 연결되는 url GetShareUrl의 return value
 
@@ -224,7 +227,7 @@
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
 
 ###### return value
-> string : "today,total" (ex "1,1")
+> string : "today,current_point,total" (ex "1,1,1")
 
     IndieStarForAOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx"); 
       
@@ -232,18 +235,19 @@
 <a id="chapter-3-11"></a>
 ##### 11. SharePointConsumeOnIndieStar 설정
 ###### - 게임내 Share Point를 차감하는 메서드 입니다.
+###### - 가지고 있는 current_point값 만큼만 차감할 수 있습니다. 차감은 current_point만 감소합니다(ex.A의today=100, current_point=100, total=100 일때 100만큼 차감 => A의 남은 포인트 today=100, current_point=0, total=100)
 ###### parameter
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
  
 > iNum : 차감할 포인트
 
 ###### return value
-> return value -1 : 구매실패 
+> return value -1 : 구매실패 (ex. current_point = 100일때 101이상 차감하려고 할때)
 
-> return value 양의정수 or 0 : 구매 후 남은 Total 값
+> return value 양의정수 or 0 : 구매 후 남은 current_point 값
 
 
-    IndieStarForAOS.instance.GetBalanceOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);  
+    IndieStarForAOS.instance.SharePointConsumeOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);  
 
 
 
@@ -297,15 +301,15 @@
 
 > iNum : 차감할 포인트
 
-> return value -1 : 구매실패 
+> return value -1 : 구매실패 (ex. current_point = 100일때 101이상 차감하려고 할때)
 
-> return value 양의정수 or 0 : 구매 후 남은 Total 값
+> return value 양의정수 or 0 : 구매 후 남은 current_point 값
 
-##### GetBalance (Today, Total 포인트 )
+##### GetBalance (Today, Current Point, Total)
     String GetBalance(String strKey)
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값    
 
-> return string : "today,total" (ex "1,1")
+> return string : "today,current_point,total" (ex "1,1,1")
 
 <a id="ios"></a>
 #### iOS 라이브러리 (.a) 
@@ -356,15 +360,15 @@
 
 > iNum : 차감할 포인트
 
-> return value -1 : 구매실패 
+> return value -1 : 구매실패 (ex. current_point = 100일때 101이상 차감하려고 할때)
 
-> return value 양의정수 or 0 : 구매 후 남은 Total 값
+> return value 양의정수 or 0 : 구매 후 남은 current_point 값
 
-##### GetBalance (Today, Total 포인트 )
+##### GetBalance (Today, Current Point, Total)
     -(char*) GetBalance : (NSString*)strKey
 > strKey : 암호화된 key GetShareUrl의 return value 중 key의 값
 
-> return string : "today,total" (ex "1,1")
+> return string : "today,current_point,total" (ex "1,1,1")
 
 <a id="chapter-4"></a>
 #### Release note
@@ -408,3 +412,7 @@
 ##### v2.53 
 ###### - 게임 공지사항 배너 추가
 ###### - 공유하기 기능 
+
+##### v2.54 
+###### - 누적된 total 추가("today,current_point,total")
+
