@@ -247,7 +247,11 @@
 > return value 양의정수 or 0 : 구매 후 남은 current_point 값
 
 
-    IndieStarForAOS.instance.SharePointConsumeOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);  
+
+
+
+
+    IndieStarForAOS.instance.SharePointConsumeOnIndieStar("xxxxxxxxxxxxxxxxxxx", 1);  
 
 
 
