@@ -3,9 +3,9 @@
 
 ## Unity Plugin
 #### Unity3D용 IndieStar API를 소개합니다.
-#### Unity Plugin (V 2.55): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unitypackage_2.55.unitypackage)
-#### Android Pulgin (V 2.55):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
-#### iOS Plugin (V 2.55):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
+#### Unity Plugin (V 2.56): [Download](https://github.com/pass4u/IndieStar/blob/master/unity/superstargames_unitypackage_2.56.unitypackage)
+#### Android Pulgin (V 2.56):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/aos)
+#### iOS Plugin (V 2.56):[Download](https://github.com/pass4u/IndieStar/tree/master/unity/ios)
 
 
 #### 목차
@@ -422,3 +422,6 @@
 
 ##### v2.55 
 ###### - sdk 서버 주소 변경
+
+##### v2.56
+###### - 공유하기, 게임공지사항 국가별 등록(default : 영어)
